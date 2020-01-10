@@ -1,0 +1,23 @@
+.footer {
+    padding: 25px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.062)
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer-item {
+        a {
+            color: #6c6c6c;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        img {
+            margin-bottom: 20px;
+        }
+    }
+}

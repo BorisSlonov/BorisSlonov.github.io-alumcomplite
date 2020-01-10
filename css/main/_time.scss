@@ -1,0 +1,48 @@
+.page-time {
+    background-image: url(../../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.h2-container-fff {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1.8px;
+    color: #fff;
+    margin: 0 0 50px;
+    text-transform: uppercase;
+
+    span {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 1.2rem;
+
+    }
+}
+
+.clock {
+   margin: 0 auto;
+   max-width: 460px;
+   text-align: center;
+    zoom: 1;
+}
+
+@media (max-width:510px) {
+    .clock {
+        zoom: .9;
+    }
+}
+@media (max-width:450px) {
+    .clock {
+        zoom: .7;
+    }
+}
+@media (max-width:360px) {
+    .clock {
+        zoom: .6
+    }
+}

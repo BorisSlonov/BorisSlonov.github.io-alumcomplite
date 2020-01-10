@@ -1,0 +1,48 @@
+.h2-container {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1.8px;
+    color: #2e2e2e;
+    margin: 0 0 100px;
+    text-transform: uppercase;
+    img {
+        margin: 20px 0;
+    }
+}
+@media (max-width: 425px) {
+    .h2-container {
+        font-size: 1.8rem;
+    }
+}
+.text-blue {
+    color: #1c7dee;
+}
+
+
+@import '_layout.scss';
+
+@import '_header.scss';
+
+@import '_quiz.scss';
+
+@import '_problems.scss';
+
+@import '_garant.scss';
+
+@import '_example.scss';
+
+@import '_feedback.scss';
+
+@import '_time.scss';
+
+@import '_form2.scss';
+
+@import '_form3.scss';
+
+@import '_preFooter.scss';
+
+@import '_footer.scss';
+
+//page-time--page-time--page-time--page-time--page-time
+
+//page-time--page-time--page-time--page-time--page-time

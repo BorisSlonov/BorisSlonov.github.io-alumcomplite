@@ -1,1 +1,901 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Alumcomplite</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="flipclock/compiled/flipclock.css">
+	<link href="css/style2.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main/style.css">
+</head>
+
+<body>
+
+
+
+	<!-- header -->
+	<header class='header wow fadeIn'>
+		<div class="header-all container">
+			<!-- header-top -->
+			<div class="header-top">
+				<div class="logo">
+					<img src="img/logo.png" alt="logo">
+				</div>
+				<div class="header-contact">
+					<div class="mail">
+						<img src="img/icon/mail.png" alt="mail">
+						<a href='mailto:info@alumcomplete.ca'>info@alumcomplete.ca</a>
+					</div>
+					<div class='phone'>
+						<img src="img/icon/phone.png" alt="phone">
+						<a href='tel:+1 514-657-7778'>+1 514-657-7778</a>
+					</div>
+				</div>
+			</div>
+			<!-- header-top -->
+			<!-- header-content -->
+			<div class="header-container">
+				<div class="header-content">
+					<h1 class='header-content__h1'>
+						PORTES <span class='text-blue'>COULISSANTES</span>
+						ET <span class='text-blue'>SUSPENDUES</span>
+					</h1>
+					<span class='span-h1'>pour garde-robes et espaces maison</span>
+
+					<div class='header-content__quebec'>
+						<span class='span-quebec'>
+							les plus abordable<br>
+							au québec
+						</span>
+						<img src="img/logo_q.png" alt="quebec">
+						<img class='arrow-fff' src="img/arrow-white.png" alt="arrow"><br>
+
+						<span class='span-q2'>Combien ça coûte?</span>
+
+						<div id="btn" class='btn-container'>
+							<a id="btn-open" href="#quiz" type="text" class="quiz_btn">
+								<span>calculer</span>
+							</a>
+							<span class='span-btn'>* C'est gratuit!</span>
+						</div>
+					</div>
+				</div>
+				<div class="header-img">
+					<img src="img/page-1.png" alt="">
+				</div>
+			</div>
+			<!-- header-content-->
+
+
+
+
+
+
+				<!-- quiz -->
+				<div style="display: none;">
+					<div id="quiz">
+						<div class="quiz">
+							<form method='POST'>
+								<!-- step1 -->
+								<div id="step1">
+									<div class='step step1'>
+										<div class='form-header'>
+											<span>Étape 1 / 3</span>
+										</div>
+										<div class='form-question'>
+											1. Entrez les mesures de votre ouverture,
+											espace ou garde-robe en pouces:
+										</div>
+										<div class="form-input">
+											<input type="text" placeholder="Largeur" name="largeur"><br>
+											<input class='form-height' type="text" name="hauteur" placeholder="Hauteur">
+										</div>
+										<div class="form-footer">
+											<span class='step1-blue'>
+												2. Choisissez l’emplacement de votre porte
+											</span>
+											<div class="form-info wow bounceInDown">
+												<img src="<?php echo get_template_directory_uri() ?>/assets/img/dollars.png" alt="">
+												<p>
+													et recevez un code-promo pour un choix de couleur d’encadrement gratuit!
+													<br>
+													<br>
+													<span class='Bold150'>(valeur $150)</span>
+												</p>
+											</div>
+											<span class='form-info-after'>
+												Pour choisir l’emplacement de la porte cliquez <span class='text-blue'>"CHOISIR"</span>
+											</span>
+										</div>
+										<div class='form-btn-container'>
+											<button id="btn-step1" type="button" class='form-btn'>
+												choisir
+											</button>
+										</div>
+									</div>
+								</div>
+								<!-- step1 -->
+	
+	
+								<!-- step2 -->
+								<div id="step2" class="none">
+									<div class='none step step2' action="#" method='POST'>
+										<!-- header -->
+										<div class='form-header'>
+											<span>Étape 2 / 3</span>
+										</div>
+										<div class='form-question'>
+											2.Où voulez-vous installer les portes?
+										</div>
+										<!-- checkbox -->
+										<div class="checkbox-container">
+											<div class='checkbox-item'>
+												<input type='checkbox' name="check_item[1]" id="Garde">
+												<label for="Garde">Garde-robe</label>
+											</div>
+											<div class='checkbox-item'>
+												<input type='checkbox' name="check_item[2]" id="Porte" value="horns">
+												<label for="Porte">Porte dans une chambre / salle de bain</label>
+											</div>
+											<div class='checkbox-item'>
+												<input type='checkbox' name="check_item[3]" id="Diviser">
+												<label for="Diviser">Diviser l'espace</label>
+											</div>
+											<div class='checkbox-item'>
+												<input type='checkbox' name="check_item[4]" id="Créer">
+												<label for="Créer">Créer une séparation</label>
+											</div>
+										</div>
+										<!-- checkbox -->
+										<input class='quiz_autre' type="text" placeholder="Autre" name="autre">
+										<!-- footer -->
+										<div class="form-footer">
+											<div class="form-info wow bounceIn">
+												<p>
+													Code-promo des couleurs est ajouté<br>
+													<span class='Bold150'>(valeur $150)</span>
+												</p>
+											</div>
+											<span class='form-info-after'>
+												Passez à l’etape 3 pour choisir les matériaux dans votre porte et recevez un
+												catalogue 2020
+												personnalisé!
+											</span>
+										</div>
+										<div class='form-btn-container'>
+											<button id="btn-step2" type="button" class='form-btn'>
+												choisir
+											</button>
+										</div>
+	
+									</div>
+								</div>
+								<!-- step2 -->
+	
+	
+								<!-- step3 -->
+								<div id="step3" class="none">
+									<div class='none step step3' action="#" method='POST'>
+										<!-- header -->
+										<div class='form-header'>
+											<span>Étape 3 / 3</span>
+										</div>
+										<div class='form-question'>
+											3. Quel type de matériau souhaitez-vous dans vos portes? 
+										</div>
+										<!-- checkbox -->
+										<div class="checkbox-container">
+											<div class='checkbox-item'>
+												<input type='checkbox' name="check[1]" id="Verre" value="gogog">
+												<label for="Verre">Verre</label>
+											</div>
+											<div class='checkbox-item'>
+												<input type='checkbox' name="check[2]" id="Acrylique">
+												<label for="Acrylique">Acrylique</label>
+											</div>
+											<div class='checkbox-item'>
+												<input type='checkbox' name="check[3]" id="MDF">
+												<label for="MDF">MDF laminé</label>
+											</div>
+											<div class='checkbox-item'>
+												<input type='checkbox' name="check[4]" id="Miroire">
+												<label for="Miroire">Miroir</label>
+											</div>
+											<div class='checkbox-item'>
+												<input type='checkbox' name="check[5]" id="Impression">
+												<label for="Impression">Impression photos</label>
+											</div>
+										</div>
+										<!-- checkbox -->
+										<input class='quiz_autre' type="text" placeholder="Autre" name="autre2">
+										<div class="form-file">
+											<div class='form-file__item'><span>Transmettre le croquis</span></div>
+											<div class='form-file__item'>
+												<div class="example-2">
+													<div class="form-group">
+														<input type="file" name="file" id="file" class="input-file">
+														<label for="file" class="btn btn-tertiary js-labelFile">
+															<img class='drop-file' src="<?php echo get_template_directory_uri() ?>/assets/img/file.svg" alt="">
+															<span class="js-fileName">télécharger</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- footer -->
+										<div class="form-footer">
+											<div class="form-info">
+												<p>
+													<span class='blue-done'>✓</span> Code-promo des couleurs est ajouté <br>
+													<span class='blue-done  Bold150-done'>✓</span>
+													<span class='Bold150'>(valeur $150)</span><br>
+													<span class='blue-done'>✓</span> Catalogue 2020 est ajouté
+												</p>
+											</div>
+											<span class='form-info-after'>
+												Cliquez «finaliser» pour terminer les étapes
+											</span>
+										</div>
+										<div class='form-btn-container'>
+											<button id="btn-step3" type="button" class='form-btn'>
+												FINALISER
+											</button>
+										</div>
+									</div>
+								</div>
+								<!-- step3 -->
+	
+								<!-- step-final -->
+								<div id="step4" class="none">
+									<div class='none step step4' action="#" method='POST'>
+										<div class='form-header'>
+											<p>TERMINÉ! Nous sommes prets de vous envoyer:</p>
+										</div>
+										<div class="form-info">
+											<p>
+												<span class='blue-done'>✓</span>Code-promo des couleurs est ajouté<br>
+												<span class='blue-done  Bold150-done'>✓</span>
+												<span class='Bold150'>(valeur $150)</span><br>
+												<span class='blue-done'>✓</span>Catalogue 2020 est ajouté<br>
+												<span class='blue-done'>✓</span>Prix des portes pour vos dimensions<br>
+											</p>
+										</div>
+										<span class='step4-span'>Entrez votre information pour recevoir le tout</span>
+										<input type="text" placeholder="Nom" name="nom">
+										<input type="tel" placeholder="Téléphone" name="Téléphone">
+										<input type="email" placeholder="Email" name="Email">
+										<div class='form-btn-container'>
+											<button id="btn-step4" type="submit" class='form-btn'>
+												RECEVOIR
+											</button>
+										</div>
+									</div>
+							</form>
+						</div>
+						<!-- step-final -->
+					</div>
+	
+					<!-- done -->
+					<div id="step5" class="none">
+						<div class="done">
+							<div class="done-header">
+								<h3>Merci! Nous venons de vous envoyer l’information!</h3>
+							</div>
+							<div class="done-content">
+								<span class='done-thx'>S’il-vous-plait, vérifiez votre e-mail: </span>
+								<div class="done-container">
+									<div class="done-item">
+										<span>Gmail</span><br>
+										<img src="img/gmail.png" alt="">
+									</div>
+									<div class="done-item">
+										<span>Yahoo Mail</span><br>
+										<img src="img/yahoo.png" alt="">
+									</div>
+									<div class="done-item">
+										<span>Outlook</span><br>
+										<img src="img/outlo.png" alt="">
+								    </div>
+									<div class="done-item">
+										<span>Vidéotron</span><br>
+										<img src="img/video.png" alt="">
+									</div>
+									<div class="done-item">
+										<span>Bell</span><br>
+										<img src="img/bell.png" alt="">
+									</div>
+									<div class="done-item">
+										<span>Icloud</span><br>
+										<img src="img/icloud.png" alt="">
+									</div>
+								</div>
+								<span class='done-span400'>Ou votre fournisseur</span>
+								<span>Si l’information n’arrive pas dans 1-5 min, vérifiez le fichier SPAM</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- done -->
+	</header>
+	<!-- header -->
+
+
+
+	<!-- page-problems -->
+	<section class="page-problems">
+		<!-- h2-container -->
+		<div class="h2-container wow fadeIn">
+			<h2>connaissez-vous ces problèmes?</h2>
+		</div>
+		<!-- h2-container -->
+		<div class="container">
+			<div class="problems-container">
+				<div class="problems-item wow bounceInLeft">
+
+					<p class='problems-item__1'>
+						<img src="img/1red.png" alt="">
+						Portes coulissantes ou suspendues trouvées dans les
+						mаgasins de construction ne sont pas solides
+						et élégants. Leurs composants et leurs
+						quincailleries sont
+						fragiles. La personnalisation est impossible.
+					</p>
+				</div>
+				<div class="problems-item wow bounceInRight">
+
+					<p class='problems-item__2'>
+						<img src="img/2red.png" alt="">
+						Les portes qui proviennent de pays d'outre-mer ont un inintéressant ennuyeux et la qualité reste à
+						désirer.
+						Délais de livraison d'une porte peut dépasser 10 semaines (parfois 14-15).
+					</p>
+				</div>
+				<div class="problems-item wow fadeInLeft">
+
+					<p class='problems-item__3'>
+						<img src="img/3red.png" alt="">
+						Portes qui semblent similaires aux nôtres, qui correspondent à votre budget mais qui
+						nécessitent
+						l'achât d'une armoire entière. Résultat: coût élevé.
+					</p>
+				</div>
+				<div class="problems-item wow fadeInRight">
+
+					<p class='problems-item__4'>
+						<img src="img/4red.png" alt="">
+						Les systèmes semblables coûtent une fortune et cela
+						vous empêche l'idée de changer la conception de votre maison à cause des prix trop élevés.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- page-problems -->
+
+
+
+
+
+	<!-- page-adventages -->
+	<section class="page-advantages">
+		<div class="container">
+			<!-- h2-container -->
+			<div class="h2-container wow fadeIn">
+				<h2 class='h2-garant'>Pourquoi choisir nos portes
+					coulissantes et suspendues?</h2>
+				<img class='wow bounceIn' src="img/garant.png" alt="">
+			</div>
+			<!-- h2-container -->
+
+			<div class="advantages-row wow fadeInRight">
+
+				<div class='advantages-item1'>
+					<img class='blue1' src="img/1blue.png" alt="">
+					<p>Nos portes sont les plus élégantes et les
+						plus abordables
+						au Québec!</p>
+					<div class='arrow-blue'><img src="img/arrow-blue.png" alt=""></div>
+					<div class='btn-container'>
+						<a id="btn-openn" href="#quiz" class="quiz_btn">
+							<span>demandez le prix</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="advantages-row wow fadeInUp">
+				<div class="advantages-item">
+					<img src="img/2blue.png" alt="">
+					<p>Durabilité: structure et cadre en aluminium utilisé pour l'aéronautique. Glissement facile pour n’importe quelle grandeur de portes. 
+					</p>
+				</div>
+				<div class="advantages-item">
+					<img src="img/3blue.png" alt="">
+					<p>Design unique et personnalisé: verre, miroir, acrylique, mélamine et beaucoup d'autres choix. Tout est fait sur mesure au millimètre prêt. 
+					</p>
+				</div>
+				<div class="advantages-item">
+					<img src="img/4blue.png " alt="">
+					<p>Pas de grandes rénovations ou de structures murales nécessaires. Peuvent être suspendues sans rails au plancher ou sur rails dans une ouverture de garde-robes.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- page-adventages -->
+
+
+
+
+
+
+
+
+	<!-- page-example -->
+	<section class='page-example'>
+		<div class="container">
+			<!-- h2-container -->
+			<div class="h2-container wow fadeIn">
+				<h2>Comment pouvez-vous utiliser nos portes
+					coulissantes ou suspendues?</h2>
+			</div>
+			<!-- h2-container -->
+			<div class="example-container">
+				<!-- item -->
+				<div class="example-item wow fadeInLeft">
+					<h3>Dans les garde-robes</h3>
+					<span class='regard'>Regarder</span>
+					<div class='blue-search'>
+						<a href="img/example/1/1-1.jpg" data-fancybox="images-preview" data-width="1500"
+							data-height="1000" data-thumbs='{"autoStart":false}'>
+							<img class='img-prew' src="img/example/1/1-1.jpg">
+							<img class='search' src="img/search.png" alt="">
+
+						</a>
+					</div>
+					<div style="display: none;">
+
+						<a href="img/example/1/1-2.jpg" data-fancybox="images-preview" data-width="1500"
+							data-height="1000" data-thumb="img/example/1/1-2.jpg"></a>
+
+						<a href="img/example/1/1-3.jpg" data-fancybox="images-preview" data-width="1500"
+							data-height="1000" data-thumb="img/example/1/1-3.jpg"></a>
+
+						<a href="img/example/1/1-4.jpg" data-fancybox="images-preview" data-width="1500"
+							data-height="1000" data-thumb="img/example/1/1-4.jpg"></a>
+
+						<a href="img/example/1/1-5.jpg" data-fancybox="images-preview" data-width="1500"
+							data-height="1000" data-thumb="img/example/1/1-5.jpg"></a>
+
+
+					</div>
+				</div>
+				<!-- item -->
+				<!-- item -->
+				<div class="example-item wow fadeIn">
+					<h3>Dans les chambres à coucher</h3>
+					<span class='regard'>Regarder</span>
+					<div class='blue-search'>
+
+						<a href="img/example/2/2-1.jpeg" data-fancybox="images-preview1" data-width="1500"
+							data-height="1000" data-thumbs='{"autoStart":false}'>
+							<img class='img-prew' src="img/example/2/2-1.jpeg">
+							<img class='search' src="img/search.png" alt="">
+						</a>
+					</div>
+					<div style="display: none;">
+						<a href="img/example/2/2-2.jpg" data-fancybox="images-preview1" data-width="1500"
+							data-height="1000" data-thumb="img/example/2/2-2.jpg"></a>
+
+						<a href="img/example/2/3-2.jpg" data-fancybox="images-preview1" data-width="1500"
+							data-height="1000" data-thumb="img/example/2/3-2.jpg"></a>
+
+						<a href="img/example/2/4-2.jpg" data-fancybox="images-preview1" data-width="1500"
+							data-height="1000" data-thumb="img/example/2/4-2.jpg"></a>
+
+						<a href="img/example/2/5-2.jpg" data-fancybox="images-preview1" data-width="1500"
+							data-height="1000" data-thumb="img/example/2/5-2.jpg"></a>
+
+						<a href="img/example/2/6-2.jpg" data-fancybox="images-preview1" data-width="1500"
+							data-height="1000" data-thumb="img/example/2/6-2.jpg"></a>
+
+						<a href="img/example/2/7-2.jpg" data-fancybox="images-preview1" data-width="1500"
+							data-height="1000" data-thumb="img/example/2/7-2.jpg"></a>
+					</div>
+				</div>
+				<!-- item -->
+				<!-- item -->
+				<div class="example-item wow fadeInRight">
+					<h3>Pour diviser l`espace</h3>
+					<span class='regard'>Regarder</span>
+					<div class='blue-search'>
+
+						<a href="img/example/4/4-1.jpg" data-fancybox="images-preview2" data-width="1500"
+							data-height="1000" data-thumbs='{"autoStart":false}'>
+							<img class='img-prew' src="img/example/4/4-1.jpg">
+							<img class='search' src="img/search.png" alt="">
+						</a>
+					</div>
+					<div style="display: none;">
+						<a href="img/example/4/4-2.jpg" data-fancybox="images-preview2" data-width="1500"
+							data-height="1000" data-thumb="img/example/4/4-2.jpg"></a>
+
+						<a href="img/example/4/4-3.jpg" data-fancybox="images-preview2" data-width="1500"
+							data-height="1000" data-thumb="img/example/4/4-3.jpg"></a>
+
+						<a href="img/example/4/4-4.jpg" data-fancybox="images-preview2" data-width="1500"
+							data-height="1000" data-thumb="img/example/4/4-4.jpg"></a>
+
+						<a href="img/example/4/4-5.jpg" data-fancybox="images-preview2" data-width="1500"
+							data-height="1000" data-thumb="img/example/4/4-5.jpg"></a>
+
+					</div>
+				</div>
+				<!-- item -->
+				<!-- item -->
+				<div class="example-item wow fadeInLeft">
+					<h3>Dans les chambres des enfants</h3>
+					<span class='regard'>Regarder</span>
+					<div class='blue-search'>
+
+						<a href="img/example/3/3-1.jpg" data-fancybox="images-preview3" data-width="1500"
+							data-height="1000" data-thumbs='{"autoStart":false}'>
+							<img class='search' src="img/search.png" alt="">
+							<img class='img-prew' src="img/example/3/3-1.jpg">
+						</a>
+					</div>
+					<!-- <div style="display: none;">
+						<a href="https://source.unsplash.com/Ai2TRdvI6gM/1500x1000" data-fancybox="images-preview3"
+							data-width="1500" data-height="1000"
+							data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160"></a>
+
+						<a href="https://source.unsplash.com/Hau6K6VP5vs/1500x1000" data-fancybox="images-preview3"
+							data-width="1500" data-height="1000"
+							data-thumb="https://source.unsplash.com/Hau6K6VP5vs/240x160"></a>
+
+						<a href="https://source.unsplash.com/muFaKaGw0eE/1500x1000" data-fancybox="images-preview3"
+							data-width="1500" data-height="1000"
+							data-thumb="https://source.unsplash.com/muFaKaGw0eE/240x160"></a>
+
+						<a href="https://source.unsplash.com/eXHeq48Z-Q4/1500x1000" data-fancybox="images-preview3"
+							data-width="1500" data-height="1000"
+							data-thumb="https://source.unsplash.com/eXHeq48Z-Q4/240x160"></a>
+
+						<a href="https://source.unsplash.com/hBYzBU1xP6s/1500x1000" data-fancybox="images-preview3"
+							data-width="1500" data-height="1000"
+							data-thumb="https://source.unsplash.com/hBYzBU1xP6s/240x160"></a>
+					</div> -->
+				</div>
+				<!-- item -->
+				<!-- item -->
+				<div class="example-item wow fadeIn">
+					<h3>Pour reduire le bruit</h3>
+					<span class='regard'>Regarder</span>
+					<div class='blue-search'>
+
+						<a href="img/example/5/5-1.png" data-fancybox="images-preview4" data-width="1500"
+							data-height="1000" data-thumbs='{"autoStart":false}'>
+							<img class='img-prew' src="img/example/5/5-1.png">
+							<img class='search' src="img/search.png" alt="">
+
+						</a>
+					</div>
+					<!-- <div style="display: none;">
+						<a href="https://source.unsplash.com/Ai2TRdvI6gM/1500x1000" data-fancybox="images-preview4"
+							data-width="1500" data-height="1000"
+							data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160"></a>
+
+						<a href="https://source.unsplash.com/Hau6K6VP5vs/1500x1000" data-fancybox="images-preview4"
+							data-width="1500" data-height="1000"
+							data-thumb="https://source.unsplash.com/Hau6K6VP5vs/240x160"></a>
+
+						<a href="https://source.unsplash.com/muFaKaGw0eE/1500x1000" data-fancybox="images-preview4"
+							data-width="1500" data-height="1000"
+							data-thumb="https://source.unsplash.com/muFaKaGw0eE/240x160"></a>
+
+						<a href="https://source.unsplash.com/eXHeq48Z-Q4/1500x1000" data-fancybox="images-preview4"
+							data-width="1500" data-height="1000"
+							data-thumb="https://source.unsplash.com/eXHeq48Z-Q4/240x160"></a>
+
+						<a href="https://source.unsplash.com/hBYzBU1xP6s/1500x1000" data-fancybox="images-preview4"
+							data-width="1500" data-height="1000"
+							data-thumb="https://source.unsplash.com/hBYzBU1xP6s/240x160"></a>
+					</div> -->
+				</div>
+				<!-- item -->
+				<!-- item -->
+				<div class="example-item wow fadeInRight">
+					<h3>Et beaucoup plus</h3>
+					<span class='regard'>Regarder</span>
+					<div class='blue-search'>
+
+						<a href="img/example/6/6-1.jpg" data-fancybox="images-preview5" data-width="1500"
+							data-height="1000" data-thumbs='{"autoStart":false}'>
+							<img class='img-prew' src="img/example/6/6-1.jpg">
+							<img class='search' src="img/search.png" alt="">
+
+						</a>
+					</div>
+					<div style="display: none;">
+						<a href="img/example/6/6-2.jpg" data-fancybox="images-preview5" data-width="1500"
+							data-height="1000" data-thumb="img/example/6/6-2.jpg"></a>
+
+						<a href="img/example/6/6-3.jpg" data-fancybox="images-preview5" data-width="1500"
+							data-height="1000" data-thumb="img/example/6/6-3.jpg"></a>
+
+						<a href="img/example/6/6-4.jpg" data-fancybox="images-preview5" data-width="1500"
+							data-height="1000" data-thumb="img/example/6/6-4.jpg"></a>
+
+						<a href="img/example/6/6-5.jpg" data-fancybox="images-preview5" data-width="1500"
+							data-height="1000" data-thumb="img/example/6/6-5.jpg"></a>
+
+						<a href="img/example/6/6-6.png" data-fancybox="images-preview5" data-width="1500"
+							data-height="1000" data-thumb="img/example/6/6-6.png"></a>
+
+						<a href="img/example/6/6-7.jpg" data-fancybox="images-preview5" data-width="1500"
+							data-height="1000" data-thumb="img/example/6/6-7.jpg"></a>
+
+						<a href="img/example/6/6-8.jpg" data-fancybox="images-preview5" data-width="1500"
+							data-height="1000" data-thumb="img/example/6/6-8.jpg"></a>
+
+						<a href="img/example/6/6-9.jpg" data-fancybox="images-preview5" data-width="1500"
+							data-height="1000" data-thumb="img/example/6/6-9.jpg"></a>
+					</div>
+				</div>
+				<!-- item -->
+			</div>
+			<div class='btn-container btn-center wow fadeInUp'>
+				<a href="#form2" class="modalbox">
+					<span>commander un Catalogue</span>
+				</a>
+			</div>
+
+
+		</div>
+	</section>
+	<!-- page-example -->
+
+
+
+	<!-- page-feedback -->
+	<section class="page-feedback">
+		<!-- h2-container -->
+		<div class="h2-container container wow fadeIn">
+			<h2 class='h2-sm'>La compagnie la plus recommandée par les
+				consommateurs dans Google</h2>
+		</div>
+		<!-- h2-container -->
+		<div class="container">
+			<div class="feedback-container wow fadeInLeft">
+				<!-- item -->
+				<div class="feedback-item">
+					<p><span class='gold-star'>&#9733; &#9733; &#9733; &#9733; &#9733;</span> <span
+							class='span-italic'>Great service, quality and look. From the first time we met Nikita,
+							he
+							was extremely patient,
+							knowledgeable and honest. He guided us well. I never felt pressure to buy, but am so
+							glad I
+							did!
+							The installers were meticulous in their installation and were able to fit 4 nine foot
+							doors
+							seamlessly in an 80 year old house. The finished product exceeded my expectations in
+							both
+							quality and look.<br>
+							I highly recommend them if you are looking for sliding doors.</span></p>
+					<div class="person-item">
+						<div class='client1'><span>J</span></div>
+						<span class='person-name'>J Vines<br>
+							12/05/2019
+						</span>
+					</div>
+				</div>
+				<!-- item -->
+				<!-- item -->
+				<div class="feedback-item">
+					<p><span class='gold-star'>&#9733; &#9733; &#9733; &#9733; &#9733;</span> <span
+							class='span-italic'>If you are looking for a custom closet door / custom closet, I highly
+							recommend. They are affordable and have a large variety of options.
+							My condo builder was working with a company that was charging me 3x more.
+							I'm very happy with my custom closet doors and service from Alumcomplete.</span></p>
+					<div class="person-item">
+						<div class='client2'><span>E</span></div>
+						<span class='person-name'>Ioana E<br>
+							10/08/2019
+						</span>
+					</div>
+				</div>
+				<!-- item -->
+				<!-- item -->
+				<div class="feedback-item">
+					<p><span class='gold-star'>&#9733; &#9733; &#9733; &#9733; &#9733;</span> <span
+							class='span-italic'>Exceptional service from sales to installation. Nikita (salesperson) was
+							patient, courteous and knew his products well. As promised, installation was within 2 weeks
+							with product made in their own warehouse. Installers were also very courteous, cleaned up
+							after themselves, careful of surroundings while bringing up the closet doors, and also
+							patient in their work making sure everything was leveled and worked properly. I have been
+							waiting for 6 years to get doors to match my mohogany furniture and the Wedge color blends
+							perfectly. Thank you so much</p>
+					<div class="person-item">
+						<div class='client3'><span>F</span></div>
+						<span class='person-name'>Goretti Ferreira<br>
+							02/11/2019
+						</span>
+					</div>
+				</div>
+				<!-- item -->
+			</div>
+		</div>
+	</section>
+	<!-- page-feedback -->
+
+
+
+
+
+
+
+	<!-- page-time -->
+	<section class="page-time">
+		<div class="container">
+			<!-- h2-container -->
+			<div class="h2-container-fff wow fadeIn">
+				<h2>Offre limitée</h2>
+				<span>Obtenez <span class='text-blue'>gratuitement la couleur de l'encadrement en aluminium de votre
+						choix!</span>
+					<p>Recevez un <span class='text-blue'>сode-promo</span> et le catalogue des modèles 2020
+				</span></p>
+			</div>
+			<!-- h2-container -->
+
+			<div class="clock wow fadeInDownBig">
+
+			</div>
+
+			<div class='btn-container btn-center wow fadeInUp'>
+				<a href="#form2" class='modalbox'>
+					<span>obtenire une soumission</span>
+				</a>
+			</div>
+
+			<div class="form2" id="form2">
+				<form action="#">
+					<div class="form2-header">
+						<span>Entrez vos informations et recevez;</span>
+					</div>
+					<span>Code-promo pour des couleurs <br> <span class='form2-bold'>(valeur $150)</span> <br>
+						Catalogues modèles 2020 (rentre partout)</span>
+					<input type="name" placeholder="Nom">
+					<input type="email" placeholder="E-mail">
+					<button id='form2-btn'>recevoir code promo</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- page-time -->
+
+
+
+
+
+
+
+	<!-- preFooter -->
+	<section class="page-preFooter">
+		<!-- h2-container -->
+		<div class="h2-container container wow fadeIn">
+			<h2>Comment fonctionne la commande d'une porte?</h2>
+		</div>
+		<!-- h2-container -->
+		<div class="container">
+			<div class="preFooter-container wow fadeInRight">
+				<div class="preFooter-item">
+					<p class='preFooter-item__1'>
+						<img src="img/1blue.png" alt="">
+						Obtenez norte catalogue et faites la demande d`une <span class='text-blue'>soumission
+							gratuite</span>
+					</p>
+				</div>
+				<div class="preFooter-item">
+					<p class='preFooter-item__2'>
+						<img src="img/2blue.png" alt="">
+						Recevez un prix et une expertise
+						de notre spécialiste.
+					</p>
+				</div>
+				<div class="preFooter-item">
+					<p class='preFooter-item__3'>
+						<img src="img/3blue.png" alt="">
+						Planifiez une visite d'un tecnicien
+						afin d'effectuer l'installation ou
+						Installez vous-même!
+					</p>
+				</div>
+
+				<div class='btn-container btn-center wow fadeInUp'>
+					<a href="#form3" class="modalbox">
+						<span>obtenir un devis</span>
+					</a>
+				</div>
+
+
+
+
+
+
+
+
+				<!-- preFooter--Form -->
+				<div class="form3" id="form3">
+					<form action="#">
+						<div class="form3-header">
+							<span>ОBTENIR UNE SOUMISSION</span>
+						</div>
+						<input type="num" placeholder="Largeur (po)">
+						<input type="num" placeholder="Hauteur (po)">
+						<input type="text" placeholder="Emplacement">
+						<textarea placeholder="Commentaires"></textarea>
+						<span>
+							Coordonnées</span>
+						<input type="name" placeholder="Nom, prénom">
+						<input type="tel" placeholder="Téléphone">
+						<input type="email" placeholder="Email">
+						<button id='form3-btn' href='#step5'>recevoir</button>
+						<span>Code-promo pour des couleurs <br> <span class='form3-bold'>(valeur $150)</span> <br>
+							Catalogues modèles 2020 (rentre partout)</span>
+					</form>
+				</div>
+			</div>
+	</section>
+	<!-- preFooter -->
+
+
+
+	<!-- footer -->
+	<footer class='footer'>
+		<div class="container">
+			<div class="footer-container">
+				<div class="footer-item wow fadeInLeft">
+					<img src="img/logo.png" alt="logo">
+				</div>
+				<div class="footer-item wow fadeInRight">
+					<div class="header-contact">
+						<div class="mail">
+							<img src="img/icon/mail.png" alt="mail">
+							<a href='mailto:info@alumcomplete.ca'>info@alumcomplete.ca</a>
+						</div>
+						<div class='phone'>
+							<img src="img/icon/phone.png" alt="phone">
+							<a href='tel:+1 514-657-7778'>+1 514-657-7778</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="flipclock/compiled/flipclock.min.js"></script>
+	<script src='js/animate.min.js'></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="fancybox-master/dist/jquery.fancybox.js"></script>
+	<script src='js/script.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+.header {
+    background-image: url(../../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    min-height: 100vh;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.header-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-contact {
+    display: flex;
+    .mail {
+        margin-right: 3rem;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 10px;
+        }
+    }
+    .phone {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 10px;
+        }
+    }
+    a {
+        color: #fff;
+    }
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-content {
+    &__h1 {
+        font-size: 3.1rem;
+       text-transform: uppercase;
+       letter-spacing: 2.5px;
+       margin: 0 0 15px;
+    }
+    .span-h1 {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        letter-spacing: 0.26px;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.685);
+        margin: 0 0 50px;
+    }
+    &__quebec {
+        position: relative;
+        .arrow-fff {
+            position: absolute;
+            top: 65px;
+            
+        }
+        .span-quebec {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1.75px;
+        }
+        .span-q2 {
+            display: inline-block;
+            margin-top: 55px;
+            font-size: 1.4rem;
+        }
+    }
+   
+}
+
+.header-img {
+    img {
+        max-width: 100%;
+    }
+}
+
+.btn-container {
+  margin-top: 50px;
+
+ 
+    a {
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1.53px;
+        padding: .9rem 3.2rem;
+        background-color: #ecc462;
+        border: 2px solid  #ecc462;
+        transition: all 1s;
+ 
+        &:hover {
+            background-color: #ecc5628f;
+            color: #000;
+            transition: all 1s;
+        }
+    
+    }
+    .span-btn {
+        margin-left: 25px;
+        color: rgba(255, 255, 255, 0.74);
+    }
+
+   
+}
+
+@media (max-width:822px) {
+    .header {
+        background-position: right center;
+    }
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 0;
+    }
+    .header-content {
+        text-align: center;
+        margin: 50px 0;
+    }
+    .header-img {
+        display: none;
+    }
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        a {
+            max-width: 200px;
+            margin: 0 auto 10px;
+        }
+        .span-btn {
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width:652px) {
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+    }
+    .header-contact {
+        margin-top: 25px;
+    }
+}
+@media (max-width:375px) {
+    .header-contact {
+        .mail {
+            margin-right: 5px;
+        }
+    }
+}
